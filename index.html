@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <main class="container">
+    <section class="content">
+
+      <!----------------- REPORT --------------->
+      <div class="box report">
+        <div class="rep-top">
+          <img src="images/image-jeremy.png" class="user">
+          <p>Report for</p>
+          <h1>Jeremy<br>Robson</h1>
+        </div>
+        <div class="rep-bot">
+          <button id="day" class="active">Daily</button>
+          <button id="week">Weekly</button>
+          <button id="month">Monthly</button>
+        </div>
+      </div>
+
+      <!----------------- WORK ---------------->
+      <div class="box work">
+        <div class="work-top">
+          <img src="images/icon-work.svg" alt="">
+        </div>
+        <div class="work-bot">
+          <div class="txt">
+            <p>Work</p>
+            <img src="images/icon-ellipsis.svg" alt="">
+          </div>
+          <div id="hours">
+            <h1 id="work-h"></h1>
+            <p id="work-p"></p>
+          </div>
+        </div>
+      </div>
+
+
+      <!------------------ PLAY ---------------->
+      <div class="box play">
+        <div class="play-top">
+          <img src="images/icon-play.svg" alt="">
+        </div>
+        <div class="play-bot">
+          <div class="txt">
+            <p>Play</p>
+            <img src="images/icon-ellipsis.svg" alt="">
+          </div>
+          <div id="hours">
+            <h1 id="play-h">5hrs</h1>
+            <p id="play-p">Last Week - 7hrs</p>
+          </div>
+        </div>
+      </div>
+
+
+      <!------------------ STUDY ---------------->
+      <div class="box study">
+        <div class="study-top">
+          <img src="images/icon-study.svg" alt="">
+        </div>
+        <div class="study-bot">
+          <div class="txt">
+            <p>Study</p>
+            <img src="images/icon-ellipsis.svg" alt="">
+          </div>
+          <div id="hours">
+            <h1 id="study-h">5hrs</h1>
+            <p id="study-p">Last Week - 7hrs</p>
+          </div>
+        </div>
+      </div>
+
+
+      <!------------------ EXERCICE ---------------->
+      <div class="box exercice">
+        <div class="exercice-top">
+          <img src="images/icon-exercise.svg" alt="">
+        </div>
+        <div class="exercice-bot">
+          <div class="txt">
+            <p>Exercise</p>
+            <img src="images/icon-ellipsis.svg" alt="">
+          </div>
+          <div id="hours">
+            <h1 id="exer-h">5hrs</h1>
+            <p id="exer-p">Last Week - 7hrs</p>
+          </div>
+        </div>
+      </div>
+
+
+
+      <!------------------ SOCIAL ---------------->
+      <div class="box social">
+        <div class="social-top">
+          <img src="images/icon-social.svg" alt="">
+        </div>
+        <div class="social-bot">
+          <div class="txt">
+            <p>Social</p>
+            <img src="images/icon-ellipsis.svg" alt="">
+          </div>
+          <div id="hours">
+            <h1 id="social-h">5hrs</h1>
+            <p id="social-p">Last Week - 7hrs</p>
+          </div>
+        </div>
+      </div>
+
+
+      <!------------------ SELF CARE ---------------->
+      <div class="box selfCare">
+        <div class="self-care-top">
+          <img src="images/icon-self-care.svg" alt="">
+        </div>
+        <div class="self-bot">
+          <div class="txt">
+            <p>Self Care</p>
+            <img src="images/icon-ellipsis.svg" alt="">
+          </div>
+          <div id="hours">
+            <h1 id="self-h">5hrs</h1>
+            <p id="self-p">Last Week - 7hrs</p>
+          </div>
+        </div>
+      </div>
+
+
+    </section>
+  </main>
+
+
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </footer>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
