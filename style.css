@@ -1,274 +1,133 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
 
-:root{
-    --Blue: hsl(246, 80%, 60%);
-    --Ligh--red--work: hsl(15, 100%, 70%);
-    --Soft-blue--play: hsl(195, 74%, 62%);
-    --Light-red--study: hsl(348, 100%, 68%);
-    --Lime-green--exercise: hsl(145, 58%, 55%);
-    --Violet-social: hsl(264, 64%, 52%);
-    --Soft-orange-self-care: hsl(43, 84%, 65%);
-
-    --Very-dark-blue: hsl(226, 43%, 10%);
-    --Dark-blue: hsl(235, 46%, 20%);
-    --Desaturated-blue: hsl(235, 45%, 61%);
-    --Pale-Blue: hsl(236, 100%, 87%);
+* {
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
+	box-sizing: border-box;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Rubik', sans-serif;
+.contenaire {
+	width: 100%;
+	min-height: 500px;
+	background-color: hsl(0, 0%, 81%);
 }
 
-.container{
-    width: 100%;
-    max-width: 1440px;
-    height: 100vh;
-    background-color: var(--Very-dark-blue);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.content{
-    width: 75%;
-    margin: auto;
-    display: grid;
-    grid-auto-rows: minmax(100px,auto);
-    grid-template-areas: 
-    "report report work work play play study study"
-    "report report work work play play study study"
-    "report report exercice exercice social social selfCare selfCare"
-    "report report exercice exercice social social selfCare selfCare"
-    ;
-    grid-gap: 23px;
-}
-.box{
-	background-color: var(--Dark-blue);
-	color: white;
-    overflow: hidden;
-
-}
-.report{
-    grid-area: report;
-    border-radius: 15px;
-}
-.play{
-	grid-area: play;
-    border-radius: 15px;
-    background-color: var(--Soft-blue--play);
-}
-.study{
-	grid-area: study;
-    border-radius: 15px;
-    background-color: var(--Light-red--study);
-}
-.work{
-	grid-area: work;
-    border-radius: 15px;
-    background-color: var(--Ligh--red--work);
-}
-.exercice{
-	grid-area: exercice;
-    border-radius: 15px;
-    background-color: var(--Lime-green--exercise);
-}
-.social{
-	grid-area: social;
-    border-radius: 15px;
-    background-color: var(--Violet-social);
-}
-.selfCare{
-    grid-area: selfCare;
-    border-radius: 15px;
-    background-color: var(--Soft-orange-self-care);
+.content {
+	display: grid;
+	grid-auto-rows: minmax(60px, auto);
+	padding: 15px;
+	grid-template-areas:
+		"daniel daniel daniel daniel daniel jonathan kira "
+		"daniel daniel daniel daniel daniel jonathan kira "
+		"daniel daniel daniel daniel daniel jonathan kira "
+		"jeanette patrick patrick patrick patrick patrick kira "
+		"jeanette patrick patrick patrick patrick patrick kira "
+		"jeanette patrick patrick patrick patrick patrick kira "
+	;
+	grid-gap: 25px;
 }
 
-/************************ REPORT ***************/
-.rep-top{
-    background-color: var(--Blue);
-    border-radius: 15px;
-    padding: 15px 20px;
-    height: 60%;
-}
-.rep-top .user{
-    width: 80px;
-    cursor: pointer;
-    margin-bottom: 10px;
-}
-.rep-top p{
-    margin-bottom: 10px;
+.box {
+	border-radius: 10px;
+	padding: 27px;
+	display: inline-block;
+	align-items: center;
+	color: hsl(0, 0%, 100%);
 }
 
-.rep-bot{
-    background-color: var(--Dark-blue);
-    padding: 15px 20px;
-    height: 100%;
-}
-.rep-bot button{
-    margin: 10px;
-    color: var(--Pale-Blue);
-    cursor: pointer;
-    width: 50px;
-    display: block;
-    background-color: transparent;
-    border: none;
-    outline: none;
-    font-size: 18px;
-    text-align: left;
-}
-.rep-bot button:hover{
-    color: white;
-}
-.rep-bot button:focus{
-    color: white;
-}
-.rep-bot .active{
-    color: white;
-}
- 
-/****************** EVERYTHING ********************/
-.txt{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-}
-.txt img{
-    cursor: pointer;
+.box img {
+	border-radius: 50%;
+	width: 40px;
+
 }
 
-#hours{
-    margin: 10px 20px 0 20px;
-}
-#hours h1{
-    margin-bottom: 35px;
-}
-
-
-/****************** WORK *********************/
-.work-top{
-    height: 50px;
-    overflow: hidden;
-}
-.work-top img{
-    float: right;
-    margin-right: 20px;
-}
-.work-bot{
-    background-color: var(--Dark-blue);
-    height: 100%;
-    border-radius: 15px 15px 0 0;
+.box .first-p {
+	font-family: 'Barlow Semi Condensed', sans-serif;
+	font-size: 25px;
+	font-weight: 500;
+	padding-top: 15px;
+	padding-bottom: 20px;
 }
 
-
-/****************** PLAY *********************/
-.play-top{
-    height: 50px;
-    overflow: hidden;
-}
-.play-top img{
-    float: right;
-    margin-right: 20px;
-}
-.play-bot{
-    background-color: var(--Dark-blue);
-    height: 100%;
-    border-radius: 15px 15px 0 0;
+.box .second-p {
+	font-size: 17px;
+	opacity: 70%;
 }
 
-/****************** SOCIAL *********************/
-.social-top{
-    height: 50px;
-    overflow: hidden;
-}
-.social-top img{
-    float: right;
-    margin-right: 20px;
-}
-.social-bot{
-    background-color: var(--Dark-blue);
-    height: 100%;
-    border-radius: 15px 15px 0 0;
-}
-/****************** EXERCICE *********************/
-.exercice-top{
-    height: 50px;
-    overflow: hidden;
-}
-.exercice-top img{
-    float: right;
-    margin-right: 20px;
-}
-.exercice-bot{
-    background-color: var(--Dark-blue);
-    height: 100%;
-    border-radius: 15px 15px 0 0;
-}
-/****************** SELF CARE *********************/
-.self-care-top{
-    height: 50px;
-    overflow: hidden;
-}
-.self-care-top img{
-    float: right;
-    margin-right: 20px;
-}
-.self-bot{
-    background-color: var(--Dark-blue);
-    height: 100%;
-    border-radius: 15px 15px 0 0;
-}
-/****************** STUDY *********************/
-.study-top{
-    height: 50px;
-    overflow: hidden;
-}
-.study-top img{
-    float: right;
-    margin-right: 20px;
-}
-.study-bot{
-    background-color: var(--Dark-blue);
-    height: 100%;
-    border-radius: 15px 15px 0 0;
+.img {
+	display: inline-flex;
+	align-items: center;
+	justify-content: flex-start;
+	width: 200px;
 }
 
+.img h5 {
+	padding-left: 15px;
+}
 
+.span {
+	opacity: 70%;
+	font-size: 10px;
+	padding-left: 15px;
+}
 
+.quote {
+	position: absolute;
+}
 
+.daniel {
+	grid-area: daniel;
+	background-color: hsl(263, 55%, 52%);
+}
 
-/***************** MEDIA QUERY ***************/
-@media screen and (max-width:500px) {
-    .container{
-        height: 100%;
-    }
-    .content{
-    margin: 20px auto;
-    grid-template-areas: 
-    "report report"
-    "report report"
-    "work work"
-    "work work"
-    "play play"
-    "play play"
-    "study study"
-    "study study"
-    "exercice exercice"
-    "exercice exercice"
-    "social social "
-    "social social "
-    "selfCare selfCare"
-    "selfCare selfCare"
-    ;
-    }
-    .rep-bot p{
-        display: inline-block;
-        margin: 20px;
-    }
-    #hours{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
+.jeanette {
+	grid-area: jeanette;
+	background-color: hsl(0, 0%, 100%);
+	color: hsl(217, 19%, 35%);
+
+}
+
+.jonathan {
+	grid-area: jonathan;
+	background-color: hsl(217, 19%, 35%);
+
+}
+
+.kira {
+	grid-area: kira;
+	background-color: hsl(0, 0%, 100%);
+	color: hsl(217, 19%, 35%);
+}
+
+.patrick {
+	grid-area: patrick;
+	background-color: hsl(219, 29%, 14%);
+}
+
+@media screen and (max-width:750px) {
+	.content {
+		display: grid;
+		grid-auto-rows: minmax(60px, auto);
+		grid-auto-columns: minmax(25px, auto);
+		padding: 15px;
+		grid-template-areas:
+			"daniel daniel daniel daniel daniel daniel daniel"
+			"daniel daniel daniel daniel daniel daniel daniel"
+			"daniel daniel daniel daniel daniel daniel daniel"
+			"jonathan jonathan jonathan jonathan jonathan jonathan jonathan"
+			"jonathan jonathan jonathan jonathan jonathan jonathan jonathan"
+			"jonathan jonathan jonathan jonathan jonathan jonathan jonathan"
+			"jeanette jeanette jeanette jeanette jeanette jeanette jeanette"
+			"jeanette jeanette jeanette jeanette jeanette jeanette jeanette"
+			"jeanette jeanette jeanette jeanette jeanette jeanette jeanette"
+			"patrick patrick patrick patrick patrick patrick patrick"
+			"patrick patrick patrick patrick patrick patrick patrick"
+			"patrick patrick patrick patrick patrick patrick patrick"
+			"kira kira kira kira kira kira kira"
+			"kira kira kira kira kira kira kira"
+			"kira kira kira kira kira kira kira"
+		;
+		grid-gap: 25px;
+	}
 }
